@@ -1,0 +1,115 @@
+	<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Event Tickets Order Form</title>
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">		
+	</head>
+
+	<body>
+		<div id="frame">
+			<header>
+				<img src="images/ornament-logo.png" alt="New Year Central Logo" style="width: 400px;">
+				<div id="header-line-1">New Year Central</div>
+				<div id="header-line-2">For the child in all of us!</div>
+			</header>
+
+			<!-- navigation starts -->
+			<nav id="nav_menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<li><a href="products.html">Our Products</a></li>
+					<li><a href="tickets_order_form.html" class="current">Event Tickets</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+			<aside>
+				<div class="sidebar-title">Products of The Week...</div>
+				<ul>
+					<li><a href="assets/products/berry-garland.html">Natural Holly Berry Garland, 5f - $74.99</a></li>
+					<li><a href="assets/products/artificial-red-berry-garland.html">Artificial Red Berry and White Edge Holly Leaf Christmas Garland, 5.5f - $38.99</a></li>
+					<li><a href="assets/products/christmas-berries-stems.html">Christmas Berries Red Stems Evergreen Pine Branches, 8pcs - $15.99</a></li>
+				</ul>
+			</aside>
+			
+			<main>
+				<h1>Order Event Tickets</h1>
+				<!-- The form starts here... -->
+				<form name="order_form" method="post" action="place_order.html">
+					<fieldset>
+					  <legend>Order Information</legend>
+					  <label for="email">Email *</label>
+					  <input type="email" name="email" id="email" placeholder="you@example.com" required autofocus>
+				  
+					  <label for="first_name">First Name *</label>
+					  <input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required>
+				  
+					  <label for="last_name">Last Name *</label>
+					  <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required>
+				  
+					  <label for="phone_number">Phone Number</label>
+					  <input type="tel" name="phone_number" id="phone_number" placeholder="999-999-9999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				  
+					  <label for="event_select">Event *</label>
+					  <select name="event_select" id="event_select" required>
+						<option value="">Please select an event</option>
+						<option value="cookie_contest">Cookie Decoration Contest</option>
+						<option value="tree_contest">Tree Decoration Contest</option>
+						<option value="ride_along">Gift of Light Ride-Along</option>
+						<option value="breakfast_santa">Breakfast with Santa</option>
+					  </select>
+				  
+					  <label for="order_type_select">Order Type *</label>
+					  <select name="order_type_select" id="order_type_select" required>
+						<option value="">Please select an order type</option>
+						<option value="member_package">Member Package</option>
+						<option value="donor_package">Donor Package</option>
+						<option value="single_tickets">Single Tickets</option>
+					  </select>
+				  
+					  <label>Payment Information *</label>
+					  <fieldset id="payment_method">
+						<label for="card_type">Card Type *</label>
+						<select name="card_type" id="card_type" required>
+						  <option value="">Please select a card type</option>
+						  <option value="visa">Visa</option>
+						  <option value="mastercard">Master Card</option>
+						  <option value="discover">Discover</option>
+						</select>
+				  
+						<label for="card_number">Card Number *</label>
+						<input type="text" name="card_number" id="card_number" placeholder="Enter your card number" pattern="[0-9]{16}" required>
+				  
+						<label>Expiration Date *</label>
+						<div>
+						  <select name="exp_month" id="exp_month" required>
+							<option value="">MM</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+							<option value="03">03</option>
+							<option value="04">04</option>
+							<option value="05">05</option>
+							<option value="06">06</option>
+							<option value="07">07</option>
+							<option value="08">08</option>
+							<option value="09">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						  </select>
+						  <select name="exp_year" id="exp_year" required>
+							<option value="">YYYY</option>
+							<option value="2021">2021</option>
+				  
+				
+			</main>
+			
+			<footer>
+				<p>&copy; 2021 New Year Central. Created by Gurpreet Singh.</p>
+			</footer>
+		</div>
+	</body>
+</html>
